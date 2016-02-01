@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ADLIBWEB FOR CMS EXTERN -->
+  <!-- ======================================================================================= -->
+  <!-- Default settings -->
+  <!-- ======================================================================================= -->
+<webConfiguration>
+  <!-- Global settings -->
+  <globalConfiguration>
+    <!-- relative or absolute paths are both supported -->
+    <databasepath>..\CMS\data</databasepath>
+    <maxlimit>999999</maxlimit>
+    <adlib_smarthost></adlib_smarthost>
+  </globalConfiguration>
+  
+  <!-- ======================================================================================= -->
+  <!-- Default group -->
+  <!-- ======================================================================================= -->
+  <groupConfiguration group="default"></groupConfiguration>
+  
+  <!-- ======================================================================================= -->
+  <!-- Default group for museum -->
+  <!-- ======================================================================================= -->
+  <groupConfiguration group="defaultMuseum">
+	  <brieffields>
+			<field>object.number</field>
+			<field>bar_code</field>
+			<field>object.number.alternative</field> 
+			<field>object.number.alternative.inst
+				<field>PersistentIdentifier</field>
+			</field> 
+			<field>object.number.alternative.type</field> 
+			<field>object.number.alternative.remarks</field> 
+			<field>object.number.modification</field> 
+			<field>object.number.modification.date</field> 
+			<field>object.number.modification.name</field> 
+    
+			<field>acquisition.creditline</field>
+			<field>acquisition.creditline.gb</field>
+			<field>acquisition.date</field>
+			<field>acquisition.date.precision</field> 
+			<field>acquisition.method</field> 
+			<field>acquisition.recuperation</field> 
+			<field>acquisition.reason</field> 
+			<field>acquisition.notes</field> 
+			<field>acquisition.status
+			  <field>term.gb</field>
+			  <field>PersistentIdentifier</field>
+			</field>
+		  
+			<field>administration.name</field>
+			
+			<field>holder</field> 
+			<field>owner
+				<field>PersistentIdentifier</field>
+			</field> 
+			
+			<!-- bibliografische velden -->
+			<field>
+			  bibliografic_source.title              <!-- Titel bibliografische bron -->
+			  <field>copy.number</field>             <!-- copy number bibliografische bron -->
+			  <field>year_of_publication</field>
+			  <field>PersistentIdentifier</field>
+			  <field>year</field>
+			  <field>source_title</field>
+		  </field>
+
+		  <!-- velden specifiek voor het Prentenkabinet -->
+		  <field>catalogue.ref.RPK</field>
+		  <field>catalogue.ref.RPK.number</field>
+		  <field>catalogue.ref.RPK.addition</field>
+		  <field>catalogue.ref.RPK.combination</field>
+		  <field>catalogue.ref.RPK.remark</field>
+
+		  <field>
+			  collection
+			  <field>term.gb</field>
+			  <field>PersistentIdentifier</field>
+		  </field>
+
+		  <field>
+			  collection
+			  <field>term.gb</field>
+			  <field>PersistentIdentifier</field>
+		  </field>
+
+		  <!-- Iconografische velden -->
+		  <field>
+			  content.classification.code
+			  <field>PersistentIdentifier</field>
+			  <field>term.gb</field>
+			  <field>term.addition</field>
+			  <field>source</field>
+			  <field>term.number</field>
+		  </field>
+
+		  <!-- documentatievelden. Documentatie over het object. Dit zijn andere velden dan de bibliografische velden! -->
+		  <field>documentation.issue</field> 
+		  <field>documentation.notes</field> 
+		  <field>documentation.catalogue_number</field> 
+		  <field>documentation.copy_number</field> 
+		  <field>documentation.year</field> 
+		  <field>documentation.volume</field> 
+		  <field>documentation.koha_id</field> 
+		  <field>documentation.link_cataloguelist</field> 
+		  <field>documentation.page_reference</field> 
+		  <field>documentation.title
+  			  <field>PersistentIdentifier</field>
+		  </field> 
+		  <field>documentation.free</field> 
+		  <field>documentation.author.tinlib</field> 
+		  <field>documentation.source.title</field> 
+		  <field>documentation.digital.finkfield</field> 
+		  <field>documentation.pagination.catalogue</field> 
+		  <field>documentation.place.tinlib</field> 
+		  <field>documentation.publication.year</field> 
+		  <field>documentation.publisher.tinlib</field> 
+		  <field>documentation.free.reference</field>
+		  <field>documentation.authoritative</field>
+		  <field>documentation.presentation-title</field>
+		  <field>documentation.URL</field>
+		  <field>documentation.URL.online-available</field>
+		
+		<!-- Copyright gegevens -->
+		<field>rights.copyrightnotice</field>
+		<field>rights.type</field>
+		<field>rights.freeofrights</field>
+		<field>rights.copyrightsowner</field> 
+	    <field>rights.type</field> 
+        <field>rights.expirationdate</field> 
+		
+				  <!-- velden datering object -->
+		  <field>date.period
+				<field>term.gb</field>
+				<field>PersistentIdentifier</field>
+		  </field>
+		  <field>date.source</field> 
+		  <field>date.early</field>
+		  <field>date.early.precision</field>
+		  <field>date.late</field>
+		  <field>date.late.precision</field>
+		  
+		  <!-- velden beschrijving object -->
+		  <field>description</field>
+		  
+		  <!-- velden afmeting object -->
+		  <field>dimension.part
+			<field>dimension.part.gb</field>
+		  </field>
+		  <field>dimension.type
+				<field>term.gb</field>
+				<field>PersistentIdentifier</field>
+		  </field>
+		  <field>dimension.unit</field>
+		  <field>dimension.value</field>
+		  <field>dimension.notes</field>
+		  <field>dimension.notes.gb</field>
+		  
+		  <field>dimension.frame</field> 
+	      <field>dimension.frame.info</field> 	
+		
+				  <!-- velden tentoonstellingen -->
+		  <field>
+			  exhibition.title
+			  <field> 
+				  organizer
+				  <field>place</field>
+				  <field>country</field>
+			  </field>
+			  <field>venue</field>
+			  <field>venue.date.start</field>
+			  <field>venue.date.end</field>
+		  </field>
+		  
+		  <!-- editie. Mn relevant bij prenten -->
+		  <field>edition</field>
+		  
+		  <!-- conservation creditline -->
+		  <field>financier</field>
+		  <field>conservation.creditline</field> 
+		  <field>conservation.creditline.showtill</field>
+		  
+		  <field>copy_number</field>  <!-- serienummer als er een oplage is -->
+		  
+		  <!-- inscriptie velden -->
+		  <field>inscription.type
+				<field>term.gb</field>
+				<field>PersistentIdentifier</field>
+		  </field>
+		  <field>inscription.scholarly.notes</field>
+		  <field>inscription.content</field>
+		  <field>inscription.notes</field>
+		  <field>inscription.position</field>
+		  <field>inscription.description</field>
+		  <field>inscription.reference.type</field>
+		  <field>inscription.interpretation</field>
+		  <field>inscription.language</field>
+		  <field>inscription.translation</field>
+		  <field>inscription.method</field>
+		  <field>inscription.method.gb</field>
+		  <field>inscription.type.gb</field> 
+		  <field>inscription.position.gb</field>
+		  <field>inscription.content.gb</field>
+		  <field>inscription.description.gb</field>
+		  <field>inscription.notes.gb</field>
+		  <field>inscription.status</field>
+		  
+		  <field>institution.number</field> 
+	      <field>institution.place</field> 
+		  <field>institution.name.lref</field> 
+		  <field>institution.gb</field> 
+			
+		  <field>InventoryCard</field> 
+		  
+		  <!--koppeling naar afbeelding -->
+		  <field>image.Mediabin</field>
+		  
+		  <!-- velden voor etiketteksten -->
+		  <field>label.date</field>
+		  <field>label.text</field>
+		  <field>label.manufacture</field>
+		  <field>label.title</field>
+		  <field>label.purpose</field>
+		  <field>label.notes</field>
+		  <field>label.date.gb</field>
+		  <field>label.text.gb</field>
+		  <field>label.manufacture.gb</field>
+		  <field>label.title.gb</field>
+		  <field>label.purpose.gb</field>
+		  <field>label.notes.gb</field>
+		  <field>label.notes.gb.encat</field> 
+		  <field>label.txt.gb.encat</field> 
+
+		  <!-- presentatie standplaats op zaal-->
+		  <field>current_location.name
+			<field>part_of</field>
+			<field>current_location_package.package_location</field>
+		  </field>    
+          <field>current_location.context</field> 	
+          <field>current_location.date</field> 	
+		  <field>current_location.type</field> 		  
+		  
+		  <field>location.history.context</field>
+		  <field>location.history.date.start</field>
+		  <field>location.history.date.end</field>
+		  <field>location.history.notes</field>
+		  
+		  <field>location.default.name</field>
+		  <field>location.default.type</field>
+		  <field>location.default.context</field>
+
+		  <!-- curators comments -->
+		  <field>notes.public</field>
+		  <field>notes.public.date</field>
+		  
+		<!-- velden vervaardiger inc. biografische velden -->
+		<field>maker.type</field>
+		<field>
+			  maker
+			  <field>name.gb</field>	   
+			  <field>name.BS</field>
+			  <field>literature.biography</field>
+			  <field>priref</field>
+			  <field>PersistentIdentifier</field>	   
+			  <field>birth_on</field>
+			  <field>birth_on_precision</field>
+			  <field>birth.date.end</field>
+			  <field>born_at</field>
+			  <field>born_at_unknown</field>
+			  <field>died_on</field>
+			  <field>died_on_precision</field>
+			  <field>died_at</field>
+			  <field>died_at_unknown</field>
+			  <field>death.date.end</field>
+			  <field>notes</field>
+			  <field>occupation
+					<field>term</field>
+					<field>term.gb</field>
+			  </field>
+			  <field>nationality</field>
+			  <field>gender</field>
+		  </field>
+		  <field>maker.qualifier</field>
+		  <field>maker.role
+				<field>term.gb</field>
+		  </field>
+		  <field>maker.rejected</field>
+		  <field>maker.school.style
+				<field>term.gb</field>
+				<field>PersistentIdentifier</field>
+		  </field>
+		  
+		  <!-- Materiaalvelden in thesaurusvorm -->
+		  <field>
+			  material
+			  <field>term.gb</field>		  
+			  <field>used_for</field>
+			  <field>broader_term</field>
+			  <field>narrower_term</field>
+			  <field>source</field>
+			  <field>term.number</field>
+			  <field>PersistentIdentifier</field>
+		  </field>
+		  <field>material.part</field>
+		  <field>material.notes</field>
+		
+		  <!-- objectnaam velden. Thesaurusvorm. zou uitgebreid kunnen worden met ET en NT -->
+		  <field>object.name
+			  <field>term.gb</field>
+			  <field>used_for</field>
+			  <field>broader_term</field>
+			  <field>narrower_term</field>
+			  <field>source</field>
+			  <field>term.number</field>
+			  <field>PersistentIdentifier</field>			  
+		  </field>
+		  <field>object.category</field>
+		  
+		  
+		  <field>part.of.ref</field>
+		  <field>parts.ref</field>
+		  <field>parts.title</field>
+		  <field>physical.medium</field>
+		  
+		  <field>provenance.remarks</field> 
+		  <field>provenance.source</field> 
+          <field>provenance.year</field> 
+          <field>provenance.omission</field> 
+          <field>provenance.method</field> 
+          <field>provenance.name
+			<field>PersistentIdentifier</field>
+		  </field> 
+          <field>provenance.place
+			<field>PersistentIdentifier</field>
+		  </field> 
+          <field>provenance.project</field> 
+          <field>provenance.relation</field> 
+          <field>provenance.type</field> 
+          <field>provenance.date.till</field> 
+          <field>provenance.date.from</field> 
+          <field>provenance.omission.remarks</field> 
+          <field>provenance.name.dateofbirth</field> 
+          <field>provenance.name.dateofdeath</field> 
+          <field>provenance.project.remarks</field> 
+          <field>provenance.project.references</field> 
+          <field>provenance.project.txt</field> 
+  
+		  <field>related.ref</field>
+		  <field>related.ref.type</field>
+		  <field>related.title</field>
+		  
+		  <field>pedigree</field>
+		  
+		  <field>production.place
+			<field>term.gb</field>
+			<field>latitude</field>
+			<field>longitude</field>  
+			<field>term.number</field>
+			<field>source</field>			  
+			<field>PersistentIdentifier</field>  
+		  </field>
+		  
+		  <field>production.source</field>
+		  <field>production.place.unknown</field>
+
+			  <!-- techniekvelden -->
+		  <field>
+			  technique
+			  <field>term.gb</field>
+			  <field>used_for</field>
+			  <field>broader_term</field>
+			  <field>narrower_term</field>
+			  <field>source</field>
+			  <field>term.number</field>
+			  <field>PersistentIdentifier</field>
+		  </field>
+		  <field>technique.notes</field>
+		  <field>technique.part</field>
+		  
+		  		  <!-- velden bestandscatalogus -->
+		  <field>catalogue.title</field>
+		  <field>catalogue.entry.gb</field> 
+		  <field>technical_notes.gb</field>
+		  <field>bestandscatalogus.technical.notes.gb</field>
+		  <field>bestandscatalogus.technical.notes.type.gb</field>
+		  <field>catalogue.prev.catalogs</field>
+		  <field>literature.archive.gb</field>
+		  <field>physical.medium.gb</field>
+
+		  <field>loan.out.number</field> 
+		  <field>loan.out.object_status</field> 
+		  
+		    <field>completeness</field> 
+			<field>completeness.notes</field> 
+			<field>completeness.check.date</field> 
+			<field>completeness.check.name</field> 
+  
+		  <field>condition.condition</field>
+		  <field>condition.type</field>
+		  <field>condition.description</field>
+		  <field>condition.description.gb</field>
+		  <field>condition.description.date</field>
+		  
+		  <!-- scientific examination -->
+		  <field>assesment.method</field>
+		  <field>investigator.gb</field>
+		  <field>institution.gb</field>
+		  <field>reference.number.gb</field>
+		  <field>date.early.research.gb</field>
+		  <field>date.late.research.gb</field>
+		  <field>assesment.literature</field>
+		  
+		  <!--conservation -->
+		  <field>treatment</field>
+		  <field>treatment.name</field>
+		  <field>treatment.reference</field>
+		  <field>treatment.date.early</field>
+		  <field>treatment.notes.gb</field>
+		  <field>treatment.status</field> 
+		  
+		  <!-- literatuur bij bestandscatalogus entry -->
+		  <field>catalogue.object.title</field>
+		  <field>author.catalogue.entry</field>
+		  <field>date.catalogue.entry</field>
+		  <field>date.catalogue.entry.revision</field>
+		  <field>author.catalogue.entry.revision</field>
+		  <field>literature.entry.gb</field>
+		  <field>revision.catalogue.author</field> 
+		  <field>revision.catalogue.entry.date</field> 
+		  <field>revision.literature.entry</field> 
+		  
+		  <field>title</field>
+		  <field>title.gb</field>
+		  <field>title.type</field>	  
+		  <field>title.int</field>
+		  <field>title.language</field> 
+		  <field>title.preferred</field> 
+		  
+		  <!-- wijze waarop een record online gepresenteerd mag worden: het mag wel\niet en wel\niet met afbeelding getoond worden -->
+		  <field>publish.website</field>
+		  <field>publish.api</field>
+		  <field>publish.api.spec-set</field>
+		  <field>publish.website.image-quality</field>
+
+		  <field>project.label</field>
+		  <field>PersistentIdentifier</field>
+		  
+		  <field>record.type</field> 
+
+		  <field>reproduction.notes</field>
+	      <field>reproduction.date</field> 
+          <field>reproduction.use</field> 
+          <field>reproduction.location</field> 
+          <field>reproduction.reference</field> 
+          <field>reproduction.restoration_state</field> 
+          <field>reproduction.type</field> 
+          <field>reproduction.date.end</field>
+		  
+		  <!-- 2015-09-28 velden toegevoegd tbv nieuwe versie Mediabin -->
+		  <field>reproduction.asset_identifier</field>
+		  <field>reproduction.preferred_last_update</field>
+		  <field>reproduction.image-exists</field>
+		  <field>reproduction.web_last_update</field>
+  
+		  <field>subject.name
+			 <field>PersistentIdentifier</field>	   
+			  <field>birth_on</field>
+			  <field>birth_on_precision</field>
+			  <field>born_at</field>
+			  <field>died_on</field>
+			  <field>died_on_precision</field>
+			  <field>died_at</field>
+			  <field>occupation
+					<field>term</field>
+					<field>term.gb</field>
+					<field>source</field>
+					<field>term.number</field>
+					<field>PersistentIdentifier</field>
+			  </field>
+			  <field>nationality</field>
+		  </field>
+		  <field>subject.event
+			  <field>term.gb</field>
+			  <field>source</field>
+			  <field>term.number</field>
+			  <field>PersistentIdentifier</field>	
+		  </field>
+		  <field>subject.keyword
+			<field>term.gb</field>	
+			  <field>source</field>
+			  <field>term.number</field>			
+			  <field>PersistentIdentifier</field>	
+		  </field>
+		  <field>subject.location
+			  <field>term.gb</field>
+			  <field>latitude</field>
+			  <field>longitude</field>
+			  <field>term.number</field>
+			  <field>source</field>
+			  <field>PersistentIdentifier</field>
+		  </field>
+		  
+		  <field>subject.date.begin</field>
+		  <field>subject.date.end</field>
+		 </brieffields>
+	  </groupConfiguration>
+	  
+<!-- ======================================================================================= -->
+  <!-- Default group for HARCHIEF -->
+  <!-- ======================================================================================= -->
+  <groupConfiguration group="defaultHarchief">
+	  <brieffields>
+		  <field>object.number</field>
+		  
+		  <field>acquisition.creditline</field>
+		  <field>acquisition.creditline.gb</field>
+		  <field>acquisition.date</field>
+		  <field>acquisition.status</field>
+		  
+		  <field>administration.name</field>
+
+		  <!-- bibliografische velden -->
+		  <field>
+			  bibliografic_source.title              <!-- Titel bibliografische bron -->
+			  <field>copy.number</field>             <!-- copy number bibliografische bron -->
+			  <field>year_of_publication</field>
+			  <field>PersistentIdentifier</field>
+			  <field>year</field>
+			  <field>source_title</field>
+		  </field>
+		  <!-- documentatievelden. Documentatie over het object. Dit zijn andere velden dan de bibliografische velden! -->
+	<field>documentation.issue</field> 
+	<field>documentation.notes</field> 
+	<field>documentation.catalogue_number</field> 
+	<field>documentation.copy_number</field> 
+	<field>documentation.year</field> 
+	<field>documentation.volume</field> 
+	<field>documentation.koha_id</field> 
+	<field>documentation.link_cataloguelist</field> 
+	<field>documentation.page_reference</field> 
+	<field>documentation.title
+  			  <field>PersistentIdentifier</field>
+	</field> 
+	<field>documentation.free</field> 
+	<field>documentation.author.tinlib</field> 
+	<field>documentation.source.title</field> 
+	<field>documentation.pagination.catalogue</field> 
+	<field>documentation.place.tinlib</field> 
+	<field>documentation.publication.year</field> 
+	<field>documentation.publisher.tinlib</field> 
+	<field>documentation.free.reference</field> 
+
+		  <field>collection
+				<field>term.gb</field>
+				<field>PersistentIdentifier</field>
+		  </field>
+ 
+		  <!-- Iconografische velden -->
+		  <field>content.classification.code
+				<field>PersistentIdentifier</field>
+				<field>term.gb</field>
+				<field>term.addition</field>
+				<field>source</field>
+			  <field>term.number</field>
+		  </field>
+		  <!-- Copyright gegevens -->
+		  <field>rights.copyrightnotice</field>
+		  <field>rights.type</field>
+		  <field>rights.freeofrights</field>
+		  <field>rights.copyrightsowner</field> 
+	      <field>rights.type</field> 
+          <field>rights.expirationdate</field> 
+		  
+		  <!-- velden datering object -->
+		  <field>date.period
+				<field>term.gb</field>
+				<field>PersistentIdentifier</field>
+		  </field>
+		  <field>date.source</field> 
+		  <field>date.early</field>
+		  <field>date.early.precision</field>
+		  <field>date.late</field>
+		  <field>date.late.precision</field>
+		  
+		  <!-- velden beschrijving object -->
+		  <field>description</field>
+		  <!--field>description.date</field--> 
+		  
+		  <!-- velden afmeting object -->
+		  <field>dimension.part
+			<field>dimension.part.gb</field>
+		  </field>
+		  <field>dimension.type
+				<field>term.gb</field>
+		  </field>
+		  <field>dimension.unit</field>
+		  <field>dimension.value</field>
+		  <field>dimension.notes</field>
+			  
+		  <!-- velden tentoonstellingen -->
+		  <!--field>exhibition.organiser</field-->
+		  <field>
+			  exhibition.title
+			  <field> 
+				  organizer
+				  <field>place</field>
+				  <field>country</field>
+			  </field>
+			  <field>venue</field>
+			  <field>venue.date.start</field>
+			  <field>venue.date.end</field>
+		  </field>
+		  
+		  <!-- editie. Mn relevant bij prenten -->
+		  <field>edition</field>
+
+		  
+		  <field>copy_number</field>  <!-- serienummer als er een oplage is -->
+		  <!-- inscriptie velden -->
+		  <field>inscription.type
+				<field>term.gb</field>
+		  </field>
+		  <field>inscription.content</field>
+		  <field>inscription.notes</field>
+		  <field>inscription.position</field>
+		  <field>inscription.description</field>
+		  <field>inscription.reference.type</field>
+		  <field>inscription.interpretation</field>
+		  <field>inscription.method</field>
+		  <field>inscription.status</field>
+		  <!--koppeling naar afbeelding -->
+		  <field>image.Mediabin</field>
+		  <!-- velden voor etiketteksten -->
+		  <field>label.date</field>
+		  <field>label.text</field>
+		  <field>label.manufacture</field>
+		  <field>label.title</field>
+		  <field>label.purpose</field>
+		  <field>label.notes</field>
+
+		  <!-- presentatie standplaats op zaal-->
+		  <field>current_location.name</field>
+		  <field>location.default.name</field>
+
+    	  <!-- velden vervaardiger inc. biografische velden -->
+		  <field>
+			  maker
+			  <field>name.gb</field>	   
+			  <field>name.BS</field>
+			  <field>literature.biography</field>
+
+			  <field>priref</field>	   
+			  <field>birth_on</field>
+			  <field>birth_on_precision</field>
+			  <field>birth.date.end</field>
+			  <field>born_at</field>
+			  <field>born_at_unknown</field>
+			  <field>died_on</field>
+			  <field>died_on_precision</field>
+			  <field>died_at</field>
+			  <field>died_at_unknown</field>
+			  <field>death.date.end</field>
+			  <field>notes</field>
+			  <field>occupation
+					<field>term</field>
+					<field>term.gb</field>
+			  </field>
+			  <field>nationality</field>
+		  </field>
+		  <field>maker.qualifier</field>
+		  <field>maker.role
+				<field>term.gb</field>
+		  </field>
+
+		  <field>maker.school.style
+				<field>term.gb</field>
+		  </field>
+		  <!-- Materiaalvelden in thesaurusvorm -->
+		  <field>
+			  material
+			  <field>term.gb</field>		  
+			  <field>used_for</field>
+			  <field>broader_term</field>
+			  <field>narrower_term</field>
+			  <field>source</field>
+			  <field>term.number</field>
+		  </field>
+		  <field>material.part</field>
+		  <field>material.notes</field>
+		  
+		  <!-- curators comments -->
+		  <field>notes.public</field>
+		  <field>notes.public.date</field>
+		  
+		  <!-- objectnaam velden. Thesaurusvorm. zou uitgebreid kunnen worden met ET en NT -->
+		  <field>object.name
+			  <field>term.gb</field>
+			  <field>used_for</field>
+			  <field>broader_term</field>
+			  <field>narrower_term</field>
+			  <field>source</field>
+			  <field>term.number</field>
+		  </field>
+		  <!--field>object.name.broader</field-->
+		  <field>part.of.ref</field>
+		  <field>parts.ref</field>
+		  <field>parts.title</field>
+		  <field>physical.medium</field>
+		  <field>production.place</field>
+		  <field>production.place.unknown</field>
+
+		  <!-- wijze waarop een record online gepresenteerd mag worden: het mag wel\niet en wel\niet met afbeelding getoond worden -->
+		  <field>publish.website</field>
+		  <field>publish.api</field>
+		  <field>publish.website.image-quality</field>
+		  <field>project.label</field>
+		  <field>PersistentIdentifier</field>
+
+		  <field>related.ref</field>
+		  <field>related.ref.type</field>
+		  <field>related.title</field>
+
+
+		  <!-- 2015-09-28 velden toegevoegd tbv nieuwe versie Mediabin -->
+		  <field>reproduction.asset_identifier</field>
+		  <field>reproduction.preferred_last_update</field>
+		  <field>reproduction.image-exists</field>
+		  <field>reproduction.web_last_update</field>
+		  
+		  <field>subject.name
+			 <field>priref</field>	   
+			  <field>birth_on</field>
+			  <field>birth_on_precision</field>
+			  <field>born_at</field>
+			  <field>died_on</field>
+			  <field>died_on_precision</field>
+			  <field>died_at</field>
+			  <field>occupation
+					<field>term</field>
+					<field>term.gb</field>
+					<field>source</field>
+					<field>term.number</field>
+			  </field>
+			  <field>nationality</field>
+		  </field>
+		  <field>subject.event
+			  <field>term.gb</field>
+			  <field>source</field>
+			  <field>term.number</field>
+			  <field>priref</field>	
+		  </field>
+		  <field>subject.keyword
+			<field>term.gb</field>	
+			  <field>source</field>
+			  <field>term.number</field>			
+			  <field>priref</field>	
+		  </field>
+		  <field>
+			  subject.location
+			  <field>term.gb</field>
+			  <field>latitude</field>
+			  <field>longitude</field>
+			  <field>term.number</field>
+			  <field>source</field>
+			  <field>PersistentIdentifier</field>
+		  </field>
+		  <field>subject.date.begin</field>
+		  <field>subject.date.end</field>
+
+		  <!-- techniekvelden -->
+		  <field>
+			  technique
+			  <field>term.gb</field>
+			  <field>used_for</field>
+			  <field>broader_term</field>
+			  <field>narrower_term</field>
+			  <field>source</field>
+			  <field>term.number</field>
+		  </field>
+		  <field>technique.notes</field>
+		  <field>technique.part</field>
+
+		  <field>title</field>
+
+	  </brieffields>
+	  </groupConfiguration>
+	  
+  <!-- ======================================================================================= -->
+  <!-- Default group for Thesaurus -->
+  <!-- ======================================================================================= -->
+	<groupConfiguration group="defaultThesau">
+		<brieffields>
+  <field>notes</field>
+   <field>notes.gb</field>
+   <field>broader_term
+   		<field>term.gb</field>
+   		<field>PersistentIdentifier</field>
+   </field>
+   <field>source</field>
+   <field>source_reference.date</field>
+   <field>source_reference.time</field>
+   <field>equivalent_term</field>
+   <field>input.notes</field>
+   <field>input.time</field>
+   <field>input_by</field>
+   <field>input_from</field>
+   <field>input_date</field>
+   <field>latitude</field>
+   <field>longitude</field>
+   <field>narrower_term
+   		<field>term.gb</field>
+		<field>PersistentIdentifier</field>
+   </field>
+   <field>PersistentIdentifier</field>
+   <field>priref</field>
+   <field>related_term</field>
+   <field>scope_note</field>
+   <field>see
+   		<field>term.gb</field>
+   		<field>PersistentIdentifier</field>
+   </field>
+   <field>seen_from
+   		<field>term.gb</field>
+   		<field>PersistentIdentifier</field>
+   </field>
+   <field>term_type</field>
+   <field>languageResource</field>
+   <field>term</field>
+   <field>term.code</field>
+   <field>term.gb</field>
+   <field>term.int</field>
+   <field>term.number</field>
+   <field>term.lang</field>
+   <field>term.addition</field>
+   <field>use
+   		<field>term.gb</field>
+   		<field>PersistentIdentifier</field>
+   </field>
+   <field>used_for
+   		<field>term.gb</field>
+   		<field>PersistentIdentifier</field>
+   </field>
+   <field>edit.notes</field>
+   <field>edit_by</field>
+   <field>edit_from</field>
+   <field>edit_date</field>
+   <field>edit_time</field>
+	  	  </brieffields>
+	  </groupConfiguration>	  
+
+  <!-- ======================================================================================= -->
+  <!-- Default group for People -->
+  <!-- ======================================================================================= -->
+	<groupConfiguration group="defaultPeople">
+	  <brieffields>
+		  <!-- velden vervaardiger inc. biografische velden -->
+   <field>occupation
+		<field>term.gb</field>
+		<field>PersistentIdentifier</field>   
+   </field>
+   <field>notes</field>
+   <field>biographer</field>
+   <field>biography</field>
+   <field>biography.gb</field>
+   <field>source</field>
+   <field>resource.language</field>
+   <field>source_reference.date</field>
+   <field>source_reference.time</field>
+   <field>contact_name</field>
+   <field>contact_job_title</field>
+   <field>contact_phone</field>
+   <field>date.biography</field>
+   <field>equivalent</field>
+   <field>birth.date.end</field>
+   <field>birth_on</field>
+   <field>birth_on_precision</field>
+   <field>born_at
+   		<field>term.gb</field>
+		<field>PersistentIdentifier</field>
+   </field>
+   <field>born_at_unknown</field>
+   <field>use
+   		<field>PersistentIdentifier</field>
+   </field>
+   <field>used_for
+   		<field>PersistentIdentifier</field>
+   </field>
+   <field>gender</field>
+   <field>group</field>
+   <field>institution_name</field>
+   <field>input.notes</field>
+   <field>input_by</field>
+   <field>input_from</field>
+   <field>input_date</field>
+   <field>input_time</field>
+   <field>country
+   		<field>term.gb</field>
+		<field>PersistentIdentifier</field>   
+	</field>
+   <field>literature.biography</field>
+   <field>name</field>
+   <field>name.gb</field>
+   <field>name.int</field>
+   <field>name.lang</field>
+   <field>name.BS</field>
+   <field>nationality</field>
+   <field>died_on</field>
+   <field>died_on_precision</field>
+   <field>died_at
+		<field>term.gb</field>
+		<field>PersistentIdentifier</field>   
+   </field>
+   <field>died_at_unknown</field>
+   <field>death.notes</field>
+   <field>death.date.end</field>
+   <field>PersistentIdentifier</field>
+   <field>place
+		<field>term.gb</field>
+		<field>PersistentIdentifier</field>
+   </field>
+   <field>priref</field>
+   <field>resource.name.url</field>
+   <field>revision.biographer</field>
+   <field>revised.biography</field>
+   <field>revised</field>
+   <field>revised.biography.date</field>
+   <field>school.style
+		<field>PersistentIdentifier</field>
+   </field>
+   <field>name_type</field>
+   <field>source.number</field>
+   <field>term.status</field>
+   <field>active.begin</field>
+   <field>active.notes</field>
+   <field>active.end</field>
+   <field>active.place
+		<field>term.gb</field>
+		<field>PersistentIdentifier</field>   
+   </field>
+   <field>active.begin.precision</field>
+   <field>active.end.precision</field>
+   <field>edit.notes</field>
+   <field>edit_by</field>
+   <field>edit_from</field>
+   <field>edit_date</field>
+   <field>edit_time</field>
+	  </brieffields>
+	  </groupConfiguration>
+
+  <!-- ======================================================================================= -->
+  <!-- Default group for Document -->
+  <!-- ======================================================================================= -->
+	<groupConfiguration group="defaultDocument">
+	  <brieffields>
+		<field>notes</field>
+		<field>author.tinlib</field>
+		<field>AuthorsAll</field>
+		<field>remarks</field>
+		<field>source_title</field>
+		<field>catalogue_number</field>
+		<field>corporate_author</field>
+		<field>corporate_author_tinlib</field>
+		<field>day</field>
+		<field>document_headword_tinlib</field>
+		<field>document_type</field>
+		<field>edition</field>
+		<field>copy.number</field>
+		<field>copy.location.notes</field>
+		<field>format</field>
+		<field>illustrations</field>
+		<field>input.notes</field>
+		<field>input.date</field>
+		<field>input.name</field>
+		<field>input.time</field>
+		<field>input.from</field>
+		<field>isbn</field>
+		<field>issn</field>
+		<field>year</field>
+		<field>year_of_publication</field>
+		<field>volume</field>
+		<field>koha_id</field>
+		<field>month</field>
+		<field>number</field>
+		<field>object_part</field>
+		<field>object_number</field>
+		<field>page_reference</field>
+		<field>pagination.catalogue</field>
+		<field>pagination</field>
+		<field>place</field>
+		<field>place.tinlib</field>
+		<field>shelf_mark</field>
+		<field>priref</field>
+		<field>PersistentIdentifier</field>
+		<field>series</field>
+		<field>series.number</field>
+		<field>role</field>
+		<field>abstract</field>
+		<field>title</field>
+		<field>keyword</field>
+		<field>publisher</field>
+		<field>publisher.tinlib</field>
+		<field>statement_of_responsibility</field>
+		<field>modification_notes</field>
+		<field>modification_from</field>
+		<field>modification_date</field>
+		<field>modification_name</field>
+		<field>modification_time</field>
+	  </brieffields>
+	  </groupConfiguration>	  
+	  
+	<!--================= Alle velden voor de website =============================-->
+	<!-- Stylesheet loze toegang tot de Adlib XML voor testdoeleinden -->
+	<!-- ======================================================================================= -->
+	<databaseConfiguration database="OldWebsite" groups="defaultMuseum">
+		<database>collect>object</database>
+		<xmlType>grouped</xmlType>
+	</databaseConfiguration>
+	
+    <databaseConfiguration database="OldHarchief" groups="defaultHarchief">
+		<database>harchief</database>
+		<xmlType>grouped</xmlType>
+	</databaseConfiguration>
+	
+	<databaseConfiguration database="OldThesau" groups="defaultThesau">
+		<database>thesau</database>
+		<xmlType>grouped</xmlType>
+	</databaseConfiguration>
+	
+    <databaseConfiguration database="OldPeople" groups="defaultPeople">
+		<database>people</database>
+		<xmlType>grouped</xmlType>
+	</databaseConfiguration>
+	
+    <databaseConfiguration database="OldDocument" groups="defaultDocument">
+		<database>document</database>
+		<xmlType>grouped</xmlType>
+	</databaseConfiguration>
+	
+  <!--======================================================================================= -->
+  <!-- Databases for use RMA website-->
+  <!-- ======================================================================================= -->
+  <databaseConfiguration database="ChoiceWebsite" groups="defaultMuseum"> 
+    <database>collect>object</database>
+    <styleSheet>xslt/RijksStudio.xslt</styleSheet>
+	<xmlType>grouped</xmlType>
+  </databaseConfiguration>
+
+	<databaseConfiguration database="ChoiceHarchief" groups="defaultHarchief">
+		<database>harchief</database>
+		<styleSheet>xslt/Harchief.xslt</styleSheet>
+		<xmlType>grouped</xmlType>
+	</databaseConfiguration>
+	
+    <!-- ======================================================================================= -->
+	<!-- Databases for CIDOC CRM project -->
+	<!-- ======================================================================================= -->
+	<databaseConfiguration database="CIDOC_Collect" groups="defaultMuseum">
+		<database>collect>object</database>
+		<xmlType>grouped</xmlType>
+	</databaseConfiguration>
+	
+	<databaseConfiguration database="CIDOC_Thesau" groups="defaultThesau">
+		<database>thesau</database>
+		<xmlType>grouped</xmlType>
+	</databaseConfiguration>	  
+	
+	<databaseConfiguration database="CIDOC_People" groups="defaultPeople">
+		<database>people</database>
+		<xmlType>grouped</xmlType>
+	</databaseConfiguration>	
+	
+    <databaseConfiguration database="CIDOC_Document" groups="defaultDocument">
+		<database>document</database>
+		<xmlType>grouped</xmlType>
+	</databaseConfiguration>
+	  
+	<!-- ======================================================================================= -->
+	<!-- Database Restauration Documentation for use Paintsample database-->
+	<!-- ======================================================================================= -->
+	<databaseConfiguration database="ChoiceRestauration">
+		<database>restauration</database>
+		<styleSheet>xslt/Restauratie.xslt</styleSheet>
+		<xmlType>grouped</xmlType>
+		<brieffields>
+			<field>dossier.number</field>
+			<field>object.number</field>
+			<field>restauration.date.begin</field>
+			<field>restauration.date.end</field>
+		</brieffields>	
+	</databaseConfiguration>
+
+	<databaseConfiguration database="ChoiceRestProject">
+		<database>rest_thesau</database>
+		<styleSheet>xslt/RestauratieProject.xslt</styleSheet>
+		<xmlType>grouped</xmlType>
+		<brieffields>
+			<field>term</field>
+		</brieffields>	
+	</databaseConfiguration>	
+	<!-- ======================================================================================= -->
+	<!-- 20130226 Test koppeling DMS -->
+	<!-- ======================================================================================= -->
+	<databaseConfiguration database="ChoiceShpnt">
+		<database>collect>object</database>
+		<styleSheet>xslt/SharePoint.xslt</styleSheet>
+		<xmlType>grouped</xmlType>
+		<brieffields>
+			<field>maker</field>
+			<field>maker.qualifier</field>
+			<field>maker.role</field>
+			<field>maker.rejected</field>
+			<field>object.name</field>
+			<field>object.number</field>
+			<field>title</field>
+			<field>title.type</field>
+		</brieffields>
+	</databaseConfiguration>
+	
+	<databaseConfiguration database="ChoiceSharepoint">
+		<database>collect</database>
+		<!--writeAllowed>True</writeAllowed-->
+		<!--xmlType>grouped</xmlType-->
+		<xmlType>grouped</xmlType>
+		
+		<brieffields>
+			<field>object.number</field>
+			<field>priref</field>
+			<field>title</field>
+			<field>maker</field>
+			<field>maker.role</field>
+			<field>object.name</field>
+			<field>description</field>
+			<field>technique</field>
+			<field>date.period</field>
+			<field>material</field>
+			<field>current_location.name</field>
+			
+			<!-- 2015-09-28 velden toegevoegd tbv nieuwe versie Mediabin -->
+			<field>reproduction.asset_identifier</field>
+			<field>reproduction.preferred_last_update</field>
+			<field>reproduction.image-exists</field>
+			<field>reproduction.web_last_update</field>	
+			
+			<!-- 2015-12-14 controleveld RC en controledatum Rc aan adlib toegevoegd om spec. controle op basisvelden uit te voeren zodat mediabin beperktere set gewijzigde velden krijgt -->
+			<field>mediabin.reproductionfields.datechanged</field>
+		</brieffields>
+	</databaseConfiguration>
+
+	<databaseConfiguration database="WriteSharepoint">
+		<database>collect</database>
+		<writeAllowed>True</writeAllowed>
+		<!--xmlType>grouped</xmlType-->
+		<xmlType>grouped</xmlType>
+
+		<brieffields>
+			<!--field>object.number</field-->
+			<field>priref</field>
+			<!--field>title</field>
+			<field>maker</field>
+			<field>maker.role</field>
+			<field>object.name</field>
+			<field>description</field>
+			<field>technique</field>
+			<field>date.period</field>
+			<field>material</field>
+			<field>current_location.name</field-->
+			<!-- 2015-09-28 velden toegevoegd tbv nieuwe versie Mediabin -->
+			<field>reproduction.asset_identifier</field>
+			<field>reproduction.preferred_last_update</field>
+			<field>reproduction.image-exists</field>
+			<field>reproduction.web_last_update</field>
+		</brieffields>
+	</databaseConfiguration>
+
+
+	<!-- ======================================================================================= -->
+	<!-- 20151005 Basisvelden TransSearch  -->
+	<!-- ======================================================================================= -->
+	<databaseConfiguration database="BasicFields">
+		<database>collect>object</database>
+		<styleSheet>xslt/BasicFields.xslt</styleSheet>
+		<xmlType>grouped</xmlType>
+		<brieffields>
+			<field>priref</field>
+			<field>object.number</field>
+			<field>object.name</field>
+			<field>maker</field>
+			<field>maker.role</field>
+			<field>object.name</field>
+			<field>description</field>
+			<field>technique</field>
+			<field>date.period</field>
+			<field>material</field>
+			
+			<field>title</field>
+			<field>collection</field>
+			<field>current_location.name</field>
+			<field>current_location.barcode</field>
+			<field>bar_code</field>
+			<!-- velden afmeting object -->
+			<field>dimension.frame.info</field>
+			<field>dimension.part</field>
+			<field>dimension.type</field>
+			<field>dimension.unit</field>
+			<field>dimension.value</field>
+			<field>image.Mediabin</field>
+			<field>PersistentIdentifier</field>
+		</brieffields>
+	</databaseConfiguration>
+	
+  <!-- ======================================================================================= -->
+  <!-- 20130506 Formulier Sharepoint Registrars  -->
+  <!-- ======================================================================================= -->
+	<databaseConfiguration database="BasicObjectFields">
+		<database>collect>object</database>
+		<styleSheet>xslt/TransportBrief.xslt</styleSheet>
+		<xmlType>grouped</xmlType>
+		<brieffields>
+			<field>priref</field>
+			<field>object.number</field>
+			<field>object.name</field>
+			<field>maker</field>
+			<field>title</field>
+			<field>current_location.name</field>
+			<field>current_location.barcode</field>
+			<field>bar_code</field>
+			<!-- velden afmeting object -->
+			<field>dimension.frame.info</field>
+			<field>dimension.part</field>
+			<field>dimension.type</field>
+			<field>dimension.unit</field>
+			<field>dimension.value</field>
+		</brieffields>
+	</databaseConfiguration>
+
+  <!-- ======================================================================================= -->
+  <!-- 20150122 Formulier verplaatsingen objecten workflow (nav Kristallen project -->
+  <!-- ======================================================================================= -->
+	<databaseConfiguration database="locaties">
+		<database>location</database>
+		<styleSheet>xslt/standplaatsen.xslt</styleSheet>
+		<xmlType>grouped</xmlType>
+		<brieffields>
+		    <field>name</field>
+			<field>package_location</field>
+			<field>location_type</field>
+			<field>barcode</field>
+		</brieffields>
+	</databaseConfiguration>
+
+  <!-- ======================================================================================= -->
+  <!-- 20150122 Formulier verplaatsingen objecten workflow (nav Kristallen project -->
+  <!-- ======================================================================================= -->
+	<databaseConfiguration database="vitrines">
+		<database>collect>object</database>
+		<styleSheet>xslt/vitrines.xslt</styleSheet>
+		<xmlType>grouped</xmlType>
+		<brieffields>
+			<field>object.number</field>
+			<field>object.name</field>
+			<field>maker</field>
+			<field>title</field>
+			<field>current_location.name</field>
+			<field>location.default.name</field>
+			<field>location.default.barcode</field>
+			<field>current_location.barcode</field>
+			<field>bar_code</field>
+		</brieffields>
+	</databaseConfiguration>
+	
+ <!-- ========================= BEGIN API Formats ============================================= -->
+
+
+  <!-- ======================================================================================= -->
+  <!-- Database Collect for use API website. Dublin Core Format. In this format a geniun DC stylesheet is connected to the XML-->
+  <!-- ======================================================================================= -->
+
+
+    <!-- ======================================================================================= -->
+  <!-- Database Collect for use EDM Europeana-->
+  <!-- ======================================================================================= -->
+  <!--databaseConfiguration database="API_EDM" groups="defaultMuseum">
+	  <database>collect>object</database>
+	<xmlType>grouped</xmlType>
+	<styleSheet>xslt/EDM.xslt</styleSheet>
+  </databaseConfiguration-->
+
+	
+  <!-- tweede EDM versie die geen records om de tripples heen plaatst. Wordt geharvest door de VU/CWI -->
+  <databaseConfiguration database="API_EDM3" groups="defaultMuseum">
+	  <database>collect>object</database>
+	<xmlType>grouped</xmlType>
+	<styleSheet>xslt/EDM3.xslt</styleSheet>
+  </databaseConfiguration>
+  
+  <!-- ======================================================================================= -->
+  <!-- Database Collect for use LIDO/CONA project Getty. LIDO format-->
+  <!-- ======================================================================================= -->
+  <!--databaseConfiguration database="API_CONA" groups="defaultMuseum">
+	  <database>collect</database>
+	<xmlType>grouped</xmlType>
+	<styleSheet>xslt/CONA.xslt</styleSheet>
+  </databaseConfiguration-->
+  
+  	<!--==================== Thesaurus in SKOS ==========-->
+	<!-- http://adlibwebservice.ota.rijksmuseum.nl/websitex/wwwopac.ashx?database=IntranetPeople&search=(name_type Equals maker)&SRT=name -->
+
+	<databaseConfiguration database="RMATERMS" groups="defaultThesau">
+		<styleSheet>xslt/SKOS.xslt</styleSheet>
+		<database>thesau</database>
+	</databaseConfiguration>
+
+<!-- ========= Einde API formats ============================================================= -->
+
+	<!-- ========= Intranet Formats ============================================================= -->
+	<!-- ======================================================================================= -->
+	<!-- Database Collect for use Intranet website-->
+	<!-- ======================================================================================= -->
+	<databaseConfiguration database="Etiketten">
+		<database>collect>object</database>
+		<xmlType>grouped</xmlType>
+		<styleSheet>xslt/Etiketten.xslt</styleSheet>
+		<brieffields>
+			<field>object.number</field>
+			<field>conservation.creditline</field>
+			<field>acquisition.creditline</field>
+			<!--field>copyright</field-->
+			<field>rights.copyrightnotice</field>
+			<!-- velden datering object -->
+			<field>date.early</field>
+			<field>date.early.precision</field>
+			<field>date.late</field>
+			<field>date.late.precision</field>
+			<!-- velden beschrijving object -->
+			<field>description</field>
+			<!-- editie. Mn relevant bij prenten -->
+			<field>edition</field>
+			<field>copy_number</field>
+			<!-- velden voor etiketteksten -->
+			<field>label.date</field>
+			<field>label.text</field>
+			<field>label.manufacture</field>
+			<field>label.title</field>
+			<field>label.purpose</field>
+			<field>label.date.gb</field>
+			<field>label.text.gb</field>
+			<field>label.manufacture.gb</field>
+			<field>label.title.gb</field>
+			<field>label.purpose.gb</field>
+			<!-- presentatie standplaats op zaal-->
+			<field>current_location.name</field>
+			<!-- velden vervaardiger inc. biografische velden -->
+			<field>maker</field>
+			<field>maker.qualifier</field>
+			<field>maker.role</field>
+			<field>maker.rejected</field>
+			<field>maker.school.style</field>
+			<!-- Materiaalvelden in thesaurusvorm -->
+			<field>material</field>
+			<field>material.part</field>
+			<field>material.notes</field>
+			<field>object.name</field>
+			<field>part.of.ref</field>
+			<field>parts.ref</field>
+			<field>physical.medium</field>
+			<field>related.ref</field>
+			<field>related.ref.type</field>
+			<field>related.title</field>
+			<field>production.place</field>
+			<!-- techniekvelden -->
+			<field>technique</field>
+			<field>technique.notes</field>
+			<field>technique.part</field>
+			<field>title</field>
+			<field>title.type</field>
+		</brieffields>
+	</databaseConfiguration>
+	<!--================= Einde Etiketteksten =============================-->
+
+	<!-- ======================================================================================= -->
+	<!-- Koppelingen Adlib tbv Intranet / Adlib App in de bibliotheek -->
+	<!-- ======================================================================================= -->
+
+	<!--================= Lijstweergave voor intranet in bibliotheek ==-->
+	<!-- Koppelingen Adlib tbv Intranet / Adlib App in de bibliotheek: lijstweergave brief  -->
+	<!-- Te benaderen via adlibwebservice.rijksmuseum.nl/websitex/index.html -->
+	<!-- ======================================================================================= -->
+	
+	<databaseConfiguration database="IntranetLijst">
+		<database>collect>object</database>
+		<xmlType>grouped</xmlType>		
+		<styleSheet>xslt/IntranetLijst.xslt</styleSheet>
+		<brieffields>
+			<field>image.Mediabin</field>	  
+			<field>object.number</field>
+			<field>object.name</field>
+			<field>title</field>
+			<field>maker</field>
+			<field>description</field>
+			<field>current_location.name</field>
+		</brieffields>
+		<detailfields>*</detailfields>
+	</databaseConfiguration>
+	
+	<!--================= Bief Intranet Dia =============================-->
+	<!-- Koppelingen Adlib tbv Intranet / Adlib App in de bibliotheek: diaweergave brief  -->
+	<databaseConfiguration database="IntranetDia">
+		<database>collect>object</database>
+		<xmlType>grouped</xmlType>
+		<styleSheet>xslt/IntranetDia.xslt</styleSheet>
+		<brieffields>
+			<field>image.Mediabin</field>
+			<field>object.number</field>
+			<field>object.name</field>
+			<field>title</field>
+			<field>maker</field>
+			<field>current_location.name</field>
+		</brieffields>
+		<detailfields>*</detailfields>
+	</databaseConfiguration>
+
+	<!--================= Detail Intranet =============================-->
+	<databaseConfiguration database="IntranetDetail" groups="defaultMuseum">
+		<database>collect>object</database>
+		<xmlType>grouped</xmlType>
+		<styleSheet>xslt/IntranetDetail.xslt</styleSheet>
+	</databaseConfiguration>
+
+	<!--================= Detail Intranet =============================-->
+	<databaseConfiguration database="IntranetPlaatje" groups="defaultMuseum">
+		<database>collect>object</database>
+		<xmlType>grouped</xmlType>
+		<styleSheet>xslt/IntranetPlaatje.xslt</styleSheet>
+	</databaseConfiguration>
+	
+	<!--====================Intranet lijst vervaardigernamen ==========-->
+	<!-- http://adlibwebservice.ota.rijksmuseum.nl/websitex/wwwopac.ashx?database=IntranetPeople&search=(name_type Equals maker)&SRT=name -->
+
+	<databaseConfiguration database="IntranetThesaurus" groups="defaultThesau">
+		<database>thesau</database>
+	</databaseConfiguration>
+	
+	<!-- ======================================================================================= -->
+	<!-- Database People -->
+	<!-- http://adlibwebservice.ota.rijksmuseum.nl/websitex/wwwopac.ashx?database=IntranetPeople&search=name_type Equals MAKER AND name Equals c* sort name ascending&limit=100	-->
+	<!-- ======================================================================================= -->
+	<databaseConfiguration database="IntranetPeople" groups="defaultPeople">
+		<database>people</database>
+		<xmlType>grouped</xmlType>	
+		<styleSheet>xslt/IntranetPeople.xslt</styleSheet>
+	</databaseConfiguration>
+	
+</webConfiguration>
